@@ -1,0 +1,19 @@
+{
+  "name": "programjs",
+  "version": "1.0.0",
+  "description": "A comprehensive and lightweight npm package of common data structures and algorithms to accelerate development.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eloreprojects/programjs.git"
+  },
+  "author": "Arun Kirubarajan & Neeraj Aggarwal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eloreprojects/programjs/issues"
+  },
+  "homepage": "https://github.com/eloreprojects/programjs#readme"
+}

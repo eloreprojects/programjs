@@ -6,6 +6,11 @@ Why is this module named program.js? An inspiration for this project was compute
 
 ![Textbook](https://upload.wikimedia.org/wikipedia/en/9/90/Algorithms_%2B_Data_Structures.jpg)
 
+## Usage
+1. Install the package using `npm install --save programjs` or `yarn add programjs`
+2. Import the feature set you would like to use (e.g. `import { algorithms } from 'programjs'`)
+3. Access specific implementation through the feature set object (e.g. `const sorted_array = algorithms.bubble_sort(array)`)
+
 ## Contributing
 
 If you're interested in contributing to program.js, refer to our guide at CONTRIBUTING.md!

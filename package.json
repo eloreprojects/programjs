@@ -1,8 +1,8 @@
 {
   "name": "programjs",
-  "version": "1.0.0",
+  "version": "0.1.0",
   "description": "A comprehensive and lightweight npm package of common data structures and algorithms to accelerate development.",
-  "main": "index.js",
+  "main": "./index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },

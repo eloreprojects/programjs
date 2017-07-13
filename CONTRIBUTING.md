@@ -6,7 +6,7 @@
 3. Update README.md to include the new implemented algorithm or data structure.
 4. Open pull request to the repository for merging or feedback.
 
-## Conventions http://www.ethoberon.ethz.ch/WirthPubl/AD.pdf
+## Conventions
 We use the [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascript) for writing Javascript using ES6. File names are made using lowercase letters with underscores to seperate multiple words (e.g. bubble_sort.js)
 
 ## Inspiration

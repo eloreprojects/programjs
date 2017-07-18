@@ -1,5 +1,6 @@
 # program.js
-[![NPM](https://nodei.co/npm/programjs.png?mini=true)](https://nodei.co/npm/programjs/)  
+[![NPM](https://nodei.co/npm/programjs.png?mini=true)](https://nodei.co/npm/programjs/)
+[![Travis](https://img.shields.io/travis/eloreprojects/programjs.svg)]()
 
 A comprehensive and lightweight npm package of common data structures and algorithms to accelerate development.
 

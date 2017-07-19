@@ -7,9 +7,6 @@
     "type": "git",
     "url": "git+https://github.com/eloreprojects/programjs.git"
   },
-/*   "scripts": {
-    "test": "node src/test/test.js"
-  }, */
   "author": "Arun Kirubarajan & Neeraj Aggarwal",
   "license": "MIT",
   "bugs": {

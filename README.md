@@ -14,9 +14,5 @@ Why is this module named program.js? An inspiration for this project was compute
 2. Import the feature set you would like to use (e.g. `import { algorithms } from 'programjs'`)
 3. Access specific implementation through the feature set object (e.g. `const sorted_array = algorithms.bubble_sort(array)`)
 
-## Testing
-To test, go to the base directory in terminal and run `node src/test/test.js`.
-
-
 ## Contributing
-If you're interested in contributing to program.js, refer to our guide at [CONTRIBUTING.md](https://github.com/eloreprojects/programjs/blob/master/CONTRIBUTING.md)!
+If you're interested in contributing to program.js, refer to [our guide](https://github.com/eloreprojects/programjs/blob/master/CONTRIBUTING.md).

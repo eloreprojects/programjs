@@ -1,5 +1,6 @@
-const programjs = require('../index');
-const Stack = require('../data_structures/stack');
+const programjs = require('../src/index');
+const Stack = require('../src/data_structures/stack');
+
 
 // Test Bubble Sort
 // To do: generate array of random numbers and then test incremental values with loop

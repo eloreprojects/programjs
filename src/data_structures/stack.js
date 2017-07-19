@@ -3,16 +3,24 @@ class Stack {
         this.elements = [];
     }
 
-    push = (element) => {
+    push(element) {
         this.elements.push(element);      
     }
 
-    pop = () => {
-        this.elements.splice(this.elements.length - 1);
+    pop() {
+        return this.elements.pop();
     }
 
-    peek = () => {
+    peek() {
         return this.elements[this.elements.length - 1];
+    }
+
+    length() {
+        return this.elements.length;
+    }
+
+    print() {
+        console.log(this.elements.join(' '));
     }
 }
 

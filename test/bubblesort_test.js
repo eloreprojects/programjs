@@ -1,5 +1,3 @@
-'use strict';
-
 const bubble_sort = require('../src/algorithms/bubble_sort');
 
 // Test Bubble Sort

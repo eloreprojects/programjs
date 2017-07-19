@@ -1,6 +1,4 @@
-'use strict';
-
-module.exports = function(array) {
+module.exports = (array) => {
     let flag = true;
 
     while (flag) {

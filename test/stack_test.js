@@ -1,3 +1,5 @@
+'use strict';
+
 const Stack = require('../src/data_structures/stack');
 
 // Stack test

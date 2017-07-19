@@ -1,4 +1,4 @@
-module.exports = (array) => {
+module.exports = function(array) {
     let flag = true;
 
     while (flag) {

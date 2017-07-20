@@ -15,4 +15,4 @@ Why is this module named program.js? An inspiration for this project was compute
 3. Access specific implementation through the feature set object (e.g. `const sorted_array = algorithms.bubble_sort(array)`)
 
 ## Contributing
-If you're interested in contributing to program.js, refer to our guide at [CONTRIBUTING.md](https://github.com/eloreprojects/programjs/blob/master/CONTRIBUTING.md)!
+If you're interested in contributing to program.js, refer to [our guide](https://github.com/eloreprojects/programjs/blob/master/CONTRIBUTING.md).

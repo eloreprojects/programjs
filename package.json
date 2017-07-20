@@ -7,10 +7,17 @@
     "type": "git",
     "url": "git+https://github.com/eloreprojects/programjs.git"
   },
+  "scripts": {
+    "test": "mocha --reporter spec"
+  },
   "author": "Arun Kirubarajan & Neeraj Aggarwal",
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/eloreprojects/programjs/issues"
   },
-  "homepage": "https://github.com/eloreprojects/programjs#readme"
+  "homepage": "https://github.com/eloreprojects/programjs#readme",
+  "devDependencies": {
+    "chai": "^4.1.0",
+    "mocha": "^3.4.2"
+  }
 }

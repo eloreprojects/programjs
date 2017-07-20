@@ -1,17 +1,14 @@
+// BubbleSort Implementation
+// Worst case is O(n2)
 module.exports = (array) => {
-    let flag = true;
-
-    while (flag) {
-        flag = false;
-
-        for (let i = 0; i < array.length - 1; i++) {
-            if (array[i] > array[i + 1]) {
-                const temp = array[i];
-                array[i] = array[i + 1];
-                array[i + 1] = temp;
-            }
-        }
+  for(let i = 0; i < array.length; i++) {
+    for(let j = 1; j < array.length; j++) {
+        // if previous is larger than current
+        if(array[j - 1] > array[j]) {
+            // swap elements
+            [array[j - 1], array[j]] = [array[j], array[j - 1]];
+      }
     }
-
-    return array;
+  }
+  return array;
 };

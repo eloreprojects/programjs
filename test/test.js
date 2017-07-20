@@ -1,18 +1,16 @@
-'use strict';
+const expect = require('chai').expect;
 
-var expect = require('chai').expect;
+const stackTest = require('./stackTest');
+const bubbleSortTest = require('./bubbleSortTest');
 
-const stack_test = require('./stack_test')
-const bubblesort_test = require('./bubblesort_test');
-
-describe('#stack_test', function() {
-    it('should pass test in stack_test', function() {
-        expect(stack_test.overall()).to.equal(true);
-    });
+describe('#stackTest', () => {
+  it('should pass test in stackTest', () => {
+    expect(stackTest.overall()).to.equal(true);
+  });
 });
 
-describe('#bubblesort_test', function() {
-    it('should pass test in bubblesort_test', function() {
-        expect(bubblesort_test.overall()).to.equal(true);
-    });
+describe('#bubbleSortTest', () => {
+  it('should pass test in bubbleSortTest', () => {
+    expect(bubbleSortTest.overall()).to.equal(true);
+  });
 });

@@ -1,7 +1,7 @@
 const algorithms = require('./algorithms');
-const data_structures = require('./data_structures')
+const dataStructures = require('./dataStructures');
 
 module.exports = {
-    algorithms,
-    data_structures
+  algorithms,
+  dataStructures,
 };

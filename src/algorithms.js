@@ -1,5 +1,5 @@
-const bubble_sort = require('./algorithms/bubble_sort');
+const bubbleSort = require('./algorithms/bubbleSort');
 
 module.exports = {
-    bubble_sort
+  bubbleSort,
 };

@@ -31,14 +31,14 @@ describe('#stackSizeTest', () => {
 
 // Test Bubble Sort
 describe('#bubbleSortTest', () => {
-  it('should pass test in bubbleSortTest', () => {
-    expect(bubbleSortTest.overall()).to.equal(true);
+  it('should pass bubbleSortTest', () => {
+    expect(bubbleSortTest()).to.equal(true);
   });
 });
 
 // Test Insertion Sort
 describe('#insertionSortTest', () => {
-  it('should pass test in insertionSortTest', () => {
-    expect(insertionSortTest.overall()).to.equal(true);
+  it('should pass insertionSortTest', () => {
+    expect(insertionSortTest()).to.equal(true);
   });
 });

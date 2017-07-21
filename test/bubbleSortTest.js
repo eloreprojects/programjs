@@ -1,7 +1,6 @@
 const bubbleSort = require('../src/algorithms/bubbleSort');
 
 // Test Bubble Sort
-// To do: generate array of random numbers and then test incremental values with loop
 class bubbleSortTest {
   static overall() {
     const array = [];

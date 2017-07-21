@@ -13,12 +13,12 @@ Current implementations:
 
 - [x] Bubble sort
 - [x] Insertion sort
-- [] Quick Sort
-- [] Merge Sort
+- [ ] Quick Sort
+- [ ] Merge Sort
 
 - [x] Stack
-- [] Linked List
-- [] Heap
+- [ ] Linked List
+- [ ] Heap
 
 ## Usage
 1. Install the package using `npm install --save programjs` or `yarn add programjs`

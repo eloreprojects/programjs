@@ -11,9 +11,14 @@ Why is this module named program.js? An inspiration for this project was compute
 
 Current implementations:
 
-- Bubble sort
-- Insertion sort
-- Stack 
+- [x] Bubble sort
+- [x] Insertion sort
+- [] Quick Sort
+- [] Merge Sort
+
+- [x] Stack
+- [] Linked List
+- [] Heap
 
 ## Usage
 1. Install the package using `npm install --save programjs` or `yarn add programjs`

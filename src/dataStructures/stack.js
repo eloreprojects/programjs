@@ -11,10 +11,13 @@ module.exports = class Stack {
   peek() {
     return this.elements[this.elements.length - 1];
   }
-  length() {
+  size() {
     return this.elements.length;
   }
+  toString() {
+    return this.elements.join(' ');
+  }
   print() {
-    console.log(this.elements.join(' '));
+    console.log(this.toString());
   }
 };

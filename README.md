@@ -9,6 +9,12 @@ Why is this module named program.js? An inspiration for this project was compute
 
 ![Textbook](https://upload.wikimedia.org/wikipedia/en/9/90/Algorithms_%2B_Data_Structures.jpg)
 
+Current implementations:
+
+- Bubble sort
+- Insertion sort
+- Stack 
+
 ## Usage
 1. Install the package using `npm install --save programjs` or `yarn add programjs`
 2. Import the feature set you would like to use (e.g. `import { algorithms } from 'programjs'`)

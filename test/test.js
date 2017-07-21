@@ -2,7 +2,7 @@ const expect = require('chai').expect;
 
 const stackTest = require('./stackTest');
 const bubbleSortTest = require('./bubbleSortTest');
-
+const insertionSortTest = require('./insertionSortTest');
 
 // Test Stack
 describe('#stackPushTest', () => {
@@ -33,5 +33,12 @@ describe('#stackSizeTest', () => {
 describe('#bubbleSortTest', () => {
   it('should pass test in bubbleSortTest', () => {
     expect(bubbleSortTest.overall()).to.equal(true);
+  });
+});
+
+// Test Insertion Sort
+describe('#insertionSortTest', () => {
+  it('should pass test in insertionSortTest', () => {
+    expect(insertionSortTest.overall()).to.equal(true);
   });
 });

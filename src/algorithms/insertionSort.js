@@ -1,14 +1,14 @@
 module.exports = (array) => {
-    let i, j, key;
+    let i, j, current;
     
-    for (i = 1; i < array.length; i++) {
-        key = array[i];
+    for (i = 0; i < array.length; i++) {
+        current = array[i];
 
-        for (j = i - 1; array[i] < key && j >= 0; j--) {
+        for (j = i - 1; array[j] > current && j >= 0; j--) {
             array[j + 1] = array[j];
         }
         
-        array[j + 1] = key;
+        array[j + 1] = current;
     }
 
     return array;

@@ -3,5 +3,5 @@ const insertionSort = require('./algorithms/insertionSort');
 
 module.exports = {
   bubbleSort,
-  insertionSort
+  insertionSort,
 };

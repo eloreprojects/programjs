@@ -14,8 +14,8 @@ class stackTest {
     }
     const arrayString = array.join(' ');
     const stackString = stack.toString();
-    console.log(`Array output: ${arrayString}.`);
-    console.log(`Stack output: ${stackString}.`);
+    console.log(`Array output: ${arrayString}`);
+    console.log(`Stack output: ${stackString}`);
     return (stackString === arrayString);
   }
 
@@ -57,12 +57,13 @@ class stackTest {
 
   static testSize() {
     const stack = new Stack();
-    // Add 3 randomly generated numbers
-    for (let i = 0; i < 3; i += 1) {
+    const randomSize = Math.floor((Math.random() * 10) + 1);
+    // Add a random number of randomly generated numbers
+    for (let i = 0; i < randomSize; i += 1) {
       stack.push(Math.floor((Math.random() * 10) + 1));
     }
     console.log(`Stack size: ${stack.size()}`);
-    return (stack.size() === 3);
+    return (randomSize === stack.size());
   }
 }
 

@@ -1,6 +1,5 @@
 const Stack = require('../src/dataStructures/stack');
 
-// Stack test
 class stackTest {
   static testPush() {
     const array = [];
@@ -64,6 +63,17 @@ class stackTest {
     }
     console.log(`Stack size: ${stack.size()}`);
     return (randomSize === stack.size());
+  }
+
+  static testIsEmptyAndClear() {
+    const stack = new Stack();
+    // Add 4 randomly generated numbers
+    for (let i = 0; i < 4; i += 1) {
+      stack.push(Math.floor((Math.random() * 10) + 1));
+    }
+    if (stack.isEmpty()) return false;
+    stack.clear();
+    return (stack.isEmpty());
   }
 }
 

@@ -8,11 +8,11 @@ module.exports = () => {
   for (let i = 0; i < randomSize; i += 1) {
     array.push(Math.floor((Math.random() * 20) + 1));
   }
-  console.log('Initial Array: ', array);
+  console.log(`Initial Array: ${array.join(' ')}`);
 
   // Sort it
   const sortedArray = bubbleSort(array);
-  console.log('Sorted Array: ', sortedArray);
+  console.log(`Sorted Array: ${sortedArray.join(' ')}`);
 
   // Make sure each value is incremental, and fail test if not
   for (let i = 0; i < randomSize - 1; i += 1) {

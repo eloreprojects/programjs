@@ -14,8 +14,8 @@ class stackTest {
     }
     const arrayString = array.join(' ');
     const stackString = stack.toString();
-    console.log(`Array output: ${arrayString}.`);
-    console.log(`Stack output: ${stackString}.`);
+    console.log(`Array output: ${arrayString}`);
+    console.log(`Stack output: ${stackString}`);
     return (stackString === arrayString);
   }
 

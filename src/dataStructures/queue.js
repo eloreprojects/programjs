@@ -1,27 +1,27 @@
 /**
- * An implementation of a Stack in Javascript.
+ * An implementation of a Queue in Javascript. 
  * 
- * Standard stack functions.
+ * Standard queue functions.
  */
-module.exports = class Stack {
+module.exports = class Queue {
     constructor() {
         this.elements = [];
     }
 
-    push(element) {
+    enqueue(element) {
         this.elements.push(element);
     }
 
-    pop() {
-      if (!this.isEmpty) {
-          return this.elements.pop();
-      }
+    dequeue() {
+        if (this.elements.length !== 0) {
+            return this.elements.shift();
+        }
     }
 
     peek() {
-      if (!this.isEmpty) {
-          return this.elements[this.elements.length - 1];
-      }
+        if (this.elements.length !== 0) {
+            return this.elements[0];
+        }
     }
 
     size() {
@@ -43,4 +43,4 @@ module.exports = class Stack {
     print() {
         console.log(this.toString());
     }
-};
+}

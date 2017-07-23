@@ -19,7 +19,7 @@ Why is this module named program.js? An inspiration for this project was compute
 
 #### Data Structures
 - [x] Stack
-- [ ] Queue
+- [x] Queue
 - [ ] Linked List
 - [ ] Heap
 - [ ] Tree

@@ -13,13 +13,13 @@ module.exports = class Stack {
     }
 
     pop() {
-      if (!this.isEmpty) {
+      if (!this.isEmpty()) {
           return this.elements.pop();
       }
     }
 
     peek() {
-      if (!this.isEmpty) {
+      if (!this.isEmpty()) {
           return this.elements[this.elements.length - 1];
       }
     }

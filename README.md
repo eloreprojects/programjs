@@ -31,3 +31,6 @@ Why is this module named program.js? An inspiration for this project was compute
 
 ## Contributing
 If you're interested in contributing to program.js, refer to [our guide](https://github.com/eloreprojects/programjs/blob/master/CONTRIBUTING.md).
+
+## License
+We believe in open source projects. Our code is licensed under [The GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).

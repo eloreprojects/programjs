@@ -12,7 +12,7 @@ We use the [Airbnb's Javascript Style Guide](https://github.com/airbnb/javascrip
 ### Comments
 Comments are crucial to helping new developers write code (one of the goals of programjs). As such, we have a few guidelines for writing comments.
 
-All implementations should begin with a brief multi-line comment giving a brief overview of the implementation as well as space/time efficiency using Big O notation. Comments within each implementation will vary with the complexity of the code. For example, to explain a strange-looking or conterversial piece of code with other developers, a comment can look like `note: using a recursive function instead of loop to minimize runtime`. Comments should explain not what the code does, but WHY it is written a certain way. Comments to explain functions are not neccessary, as it is expected that the function name will be enough explanation to describe its functionality.
+All class implementations should begin with a brief multi-line comment giving a brief overview of the class as well as space/time efficiency using Big O notation for each function. Comments within each implementation will vary with the complexity of the code. For example, to explain a strange-looking or conterversial piece of code with other developers, a comment can look like `note: using a recursive function instead of loop to minimize runtime`. Comments should explain not what the code does, but WHY it is written a certain way. Comments to explain functions are not neccessary, as it is expected that the function and variable names will be intuitive.
 
 Overall, comment usage should be minimized in hopes of keeping files lightweight and easy for developers to get a sense of through code and code alone.
 

@@ -16,12 +16,14 @@ module.exports = class Queue {
         if (this.elements.length !== 0) {
             return this.elements.shift();
         }
+        return null;
     }
 
     peek() {
         if (this.elements.length !== 0) {
             return this.elements[0];
         }
+        return null;
     }
 
     size() {

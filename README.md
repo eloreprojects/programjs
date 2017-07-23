@@ -18,6 +18,8 @@ Why is this module named program.js? An inspiration for this project was compute
 - [ ] Merge Sort
 
 #### Data Structures
+- [x] Node
+- [x] DoubleNode
 - [x] Stack
 - [x] Queue
 - [ ] Linked List

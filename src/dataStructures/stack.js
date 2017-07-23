@@ -16,12 +16,14 @@ module.exports = class Stack {
       if (!this.isEmpty()) {
           return this.elements.pop();
       }
+      return null;
     }
 
     peek() {
       if (!this.isEmpty()) {
           return this.elements[this.elements.length - 1];
       }
+      return null;
     }
 
     size() {

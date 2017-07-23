@@ -4,39 +4,45 @@
  * Standard stack functions.
  */
 module.exports = class Stack {
-  constructor() {
-    this.elements = [];
-  }
+    constructor() {
+        this.elements = [];
+    }
 
-  push(element) {
-    this.elements.push(element);
-  }
+    push(element) {
+        this.elements.push(element);
+    }
 
-  pop() {
-    return this.elements.pop();
-  }
+    pop() {
+      if (!this.isEmpty()) {
+          return this.elements.pop();
+      }
+      return null;
+    }
 
-  peek() {
-    return this.elements[this.elements.length - 1];
-  }
+    peek() {
+      if (!this.isEmpty()) {
+          return this.elements[this.elements.length - 1];
+      }
+      return null;
+    }
 
-  size() {
-    return this.elements.length;
-  }
+    size() {
+        return this.elements.length;
+    }
 
-  isEmpty() {
-    return (this.elements.length === 0);
-  }
+    isEmpty() {
+        return (this.elements.length === 0);
+    }
 
-  clear() {
-    this.elements = [];
-  }
+    clear() {
+        this.elements = [];
+    }
 
-  toString() {
-    return this.elements.join(' ');
-  }
+    toString() {
+        return this.elements.join(' ');
+    }
 
-  print() {
-    console.log(this.toString());
-  }
+    print() {
+        console.log(this.toString());
+    }
 };

@@ -1,21 +1,21 @@
 module.exports = (array) => {
-    let min;
-    
-    for (let i = 0; i < array.length; i++) {
-        min = i;
+  let min;
 
-        for (let j = i + 1; j < array.length; j++) {
-            if (array[j] < array[min]) {
-                min = j;
-            }
-        }
+  for (let i = 0; i < array.length; i += 1) {
+    min = i;
 
-        if (min != i) {
-            let temp = array[i];
-            array[i] = array[min];
-            array[min] = temp;
-        }
+    for (let j = i + 1; j < array.length; j += 1) {
+      if (array[j] < array[min]) {
+        min = j;
+      }
     }
 
-    return array;
+    if (min !== i) {
+      const temp = array[i];
+      array[i] = array[min];
+      array[min] = temp;
+    }
+  }
+
+  return array;
 };

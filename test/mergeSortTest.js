@@ -1,6 +1,6 @@
-const selectionSort = require('../src/algorithms/selectionSort');
+const mergeSort = require('../src/algorithms/mergeSort');
 
-// Test Selection Sort
+// Test Merge Sort
 module.exports = () => {
   const array = [];
   const randomSize = Math.floor((Math.random() * 20) + 1);
@@ -11,7 +11,7 @@ module.exports = () => {
   console.log(`Initial Array: ${array.join(' ')}`);
 
   // Sort it
-  const sortedArray = selectionSort(array);
+  const sortedArray = mergeSort(array);
   console.log(`Sorted Array: ${sortedArray.join(' ')}`);
 
   // Check size of sorted array is same as original
@@ -26,3 +26,4 @@ module.exports = () => {
 
   return true;
 };
+

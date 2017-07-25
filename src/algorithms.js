@@ -5,4 +5,5 @@ const selectionSort = require('./algorithms/selectionSort');
 module.exports = {
   bubbleSort,
   insertionSort,
+  selectionSort,
 };

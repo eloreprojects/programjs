@@ -1,10 +1,24 @@
 const expect = require('chai').expect;
 
+const singlyLinkedListTest = require('./singlyLinkedListTest');
 const stackTest = require('./stackTest');
 const queueTest = require('./queueTest');
 
 const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
+
+// Test SinglyLinkedList
+describe('#singlyLinkedListAddAndGetTest', () => {
+  it('should pass testAddAndGet in singlyLinkedListTest', () => {
+    expect(singlyLinkedListTest.testAddAndGet()).to.equal(true);
+  });
+});
+
+describe('#singlyLinkedListSetTest', () => {
+  it('should pass testSet in singlyLinkedListTest', () => {
+    expect(singlyLinkedListTest.testSet()).to.equal(true);
+  });
+});
 
 // Test Stack
 describe('#stackPushTest', () => {

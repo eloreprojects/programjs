@@ -13,7 +13,7 @@ module.exports = class DoubleNode {
   }
 
   setValue(newValue) {
-    var oldValue = this.value;
+    const oldValue = this.value;
     this.value = newValue;
     return oldValue;
   }
@@ -27,15 +27,15 @@ module.exports = class DoubleNode {
   }
 
   getNext() {
-    var n = null;
+    let n = null;
     if (this.hasNext()) {
       n = this.next;
     }
     return n;
   }
 
-  getNext() {
-    var n = null;
+  getPrevious() {
+    let n = null;
     if (this.hasPrevious()) {
       n = this.previous;
     }
@@ -43,15 +43,15 @@ module.exports = class DoubleNode {
   }
 
   setNext(newNext) {
-    var oldNext = this.next;
+    const oldNext = this.next;
     this.next = newNext;
     return oldNext;
   }
 
-  setNext(newPrevious) {
-    var oldPrevious = this.previous;
+  setPrevious(newPrevious) {
+    const oldPrevious = this.previous;
     this.previous = newPrevious;
     return oldPrevious;
   }
-}
+};
 

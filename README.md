@@ -20,9 +20,9 @@ Why is this module named program.js? An inspiration for this project was compute
 #### Data Structures
 - [x] Node
 - [x] DoubleNode
+- [x] SinglyLinkedList
 - [x] Stack
 - [x] Queue
-- [ ] Linked List
 - [ ] Heap
 - [ ] Tree
 

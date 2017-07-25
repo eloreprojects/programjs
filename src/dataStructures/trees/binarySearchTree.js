@@ -1,18 +1,17 @@
 const TreeNode = require('./treeNode.js');
 
 // private method.
-let addNodeHelper = (value, head) => {
+const addNodeHelper = (value, head) => {
   if (head === null) {
-    newNode = new TreeNode(value);
+    const newNode = new TreeNode(value);
     return newNode;
-  }
-  else if (value <= head.value) {
+  } else if (value <= head.value) {
     head.left = addNodeHelper(value, head.left);
   } else {
     head.right = addNodeHelper(value, head.right);
   }
   return head;
-}
+};
 
 class BinarySearchTree {
   constructor(args) {
@@ -32,12 +31,11 @@ class BinarySearchTree {
 
   addNodesFromArray(args) {
     if (Array.isArray(args)) {
-      for(let i = 0; i < args.length; i++) {
+      for (let i = 0; i < args.length; i += 1) {
         this.addNode(args[i]);
       }
     } else {
-      console.log("Please pass an array as in input param");
-      return;
+      console.log('Please pass an array as in input param');
     }
   }
 
@@ -52,6 +50,6 @@ class BinarySearchTree {
   printPostorder() {
     TreeNode.postorderTraversal(this.head);
   }
-};
+}
 
 module.exports = BinarySearchTree;

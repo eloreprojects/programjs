@@ -1,14 +1,13 @@
 // private method.
-let findHeightHelper = (head, height = 0) => {
+const findHeightHelper = (head, height = 0) => {
   if (head == null) {
     return height;
   }
-  height = height + 1;
+  height += 1;
   return Math.max(findHeightHelper(head.left, height), findHeightHelper(head.right, height));
-}
+};
 
 class TreeNode {
-
   constructor(value) {
     this.value = value;
     this.left = null;
@@ -71,4 +70,4 @@ class TreeNode {
   }
 }
 
-module.exports = TreeNode
+module.exports = TreeNode;

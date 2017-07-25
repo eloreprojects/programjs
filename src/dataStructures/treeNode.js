@@ -5,7 +5,7 @@ const findHeightHelper = (head, height) => {
   }
   height += 1;
   return Math.max(this.findHeightHelper(head.left, height),
-    this.findHeightHelper(head.right, height));
+    this.findHeightHelper(head.right, height)) + 1;
 };
 
 module.exports = class TreeNode {

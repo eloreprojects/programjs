@@ -12,19 +12,6 @@ const addNodeHelper = (value, head) => {
   return head;
 };
 
-// Private method
-const addNodeHelper = (value, head) => {
-  if (head === null) {
-    const newNode = new TreeNode(value);
-    return newNode;
-  } else if (value <= head.value) {
-    head.left = addNodeHelper(value, head.left);
-  } else {
-    head.right = addNodeHelper(value, head.right);
-  }
-  return head;
-};
-
 module.exports = class BinarySearchTree {
   constructor(args) {
     this.head = null;

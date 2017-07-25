@@ -1,19 +1,6 @@
 const TreeNode = require('./treeNode.js');
 
-// private method.
-const addNodeHelper = (value, head) => {
-  if (head === null) {
-    const newNode = new TreeNode(value);
-    return newNode;
-  } else if (value <= head.value) {
-    head.left = addNodeHelper(value, head.left);
-  } else {
-    head.right = addNodeHelper(value, head.right);
-  }
-  return head;
-};
-
-class BinarySearchTree {
+module.exports = class BinarySearchTree {
   constructor(args) {
     this.head = null;
     if (Array.isArray(args) && args.length !== 0) {
@@ -39,6 +26,19 @@ class BinarySearchTree {
     }
   }
 
+  // Private method
+  static addNodeHelper(value, head) {
+    if (head === null) {
+      const newNode = new TreeNode(value);
+      return newNode;
+    } else if (value <= head.value) {
+      head.left = addNodeHelper(value, head.left);
+    } else {
+      head.right = addNodeHelper(value, head.right);
+    }
+    return head;
+  }
+
   printInorder() {
     TreeNode.inorderTraversal(this.head);
   }
@@ -51,5 +51,3 @@ class BinarySearchTree {
     TreeNode.postorderTraversal(this.head);
   }
 }
-
-module.exports = BinarySearchTree;

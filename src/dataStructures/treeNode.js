@@ -60,7 +60,7 @@ module.exports = class TreeNode {
     return this.findHeightHelper(head, 0);
   }
 
-  // private method.
+  // Private method
   static findHeightHelper(head, height) {
     if (head == null) {
       return height;

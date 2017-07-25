@@ -6,6 +6,7 @@ const queueTest = require('./queueTest');
 
 const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
+const selectionSortTest = require('./selectionSortTest');
 
 // Test SinglyLinkedList
 describe('#singlyLinkedListAddAndGetTest', () => {
@@ -93,5 +94,12 @@ describe('#bubbleSortTest', () => {
 describe('#insertionSortTest', () => {
   it('should pass insertionSortTest', () => {
     expect(insertionSortTest()).to.equal(true);
+  });
+});
+
+// Test Selection Sort
+describe('#selectionSortTest', () => {
+  it('should pass selectionSortTest', () => {
+    expect(selectionSortTest()).to.equal(true);
   });
 });

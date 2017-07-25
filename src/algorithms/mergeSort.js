@@ -1,4 +1,4 @@
-module.exports = (elements) => {
+function mergeSort(elements) {
   const n = elements.length;
   const halfArr = Math.floor(n / 2);
   if (n > 1) {
@@ -18,8 +18,8 @@ module.exports = (elements) => {
       a3[arrIndex] = elements[i];
       arrIndex += 1;
     }
-    a2 = this.mergeSort(a2, halfArr);
-    a3 = this.mergeSort(a3, restArr);
+    a2 = mergeSort(a2, halfArr);
+    a3 = mergeSort(a3, restArr);
 
     const returnArr = [];
     let i = 0;
@@ -48,4 +48,6 @@ module.exports = (elements) => {
     return returnArr;
   }
   return elements;
-};
+}
+
+module.exports = mergeSort;

@@ -14,6 +14,12 @@ describe('#singlyLinkedListAddAndGetTest', () => {
   });
 });
 
+describe('#singlyLinkedListSetTest', () => {
+  it('should pass testSet in singlyLinkedListTest', () => {
+    expect(singlyLinkedListTest.testSet()).to.equal(true);
+  });
+});
+
 // Test Stack
 describe('#stackPushTest', () => {
   it('should pass testPush in stackTest', () => {

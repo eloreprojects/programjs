@@ -21,7 +21,7 @@ class BinarySearchTree {
     } else if (Number.isInteger(args)) {
       this.addNode(args);
     } else {
-      console.log('Sorry, please check your input params.')
+      console.log('Sorry, please check your input params.');
     }
   }
 

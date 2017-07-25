@@ -15,12 +15,13 @@ const addNodeHelper = (value, head) => {
 module.exports = class BinarySearchTree {
   constructor(args) {
     this.head = null;
-    if (Array.isArray(args) && args.length !== 0) {
+    if (args === undefined) {
+      return;
+    }
+    if (Array.isArray(args)) {
       this.addNodesFromArray(args);
-    } else if (Number.isInteger(args)) {
-      this.addNode(args);
     } else {
-      console.log('Sorry, please check your input params.');
+      this.addNode(args);
     }
   }
 

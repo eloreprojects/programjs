@@ -12,17 +12,23 @@ Why is this module named program.js? An inspiration for this project was compute
 ### Current implementations:
 
 #### Algorithms
-- [x] Bubble sort
-- [x] Insertion sort
+- [x] Bubble Sort
+- [x] Insertion Sort
+- [x] Selection Sort
 - [ ] Quick Sort
 - [ ] Merge Sort
+- [ ] Factorial
+- [ ] Fibonacci
+- [ ] Combination
+- [ ] Permutation
+- [ ] Factorial
 
 #### Data Structures
 - [x] Node
 - [x] DoubleNode
+- [x] SinglyLinkedList
 - [x] Stack
 - [x] Queue
-- [ ] Linked List
 - [ ] Heap
 - [ ] Tree
 

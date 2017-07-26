@@ -14,6 +14,9 @@ module.exports = () => {
   const sortedArray = bubbleSort(array);
   console.log(`Sorted Array: ${sortedArray.join(' ')}`);
 
+  // Check size of sorted array is same as original
+  if (sortedArray.length !== array.length) return false;
+
   // Make sure each value is incremental, and fail test if not
   for (let i = 0; i < randomSize - 1; i += 1) {
     if (sortedArray[i] > sortedArray[i + 1]) {

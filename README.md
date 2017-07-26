@@ -1,6 +1,8 @@
 # program.js
 [![NPM](https://nodei.co/npm/programjs.png?mini=true)](https://nodei.co/npm/programjs/)
-[![Travis](https://img.shields.io/travis/eloreprojects/programjs.svg)]()
+[![Travis](https://travis-ci.org/eloreprojects/programjs.svg?branch=master)](https://travis-ci.org/eloreprojects/programjs) 
+[![bithound](https://img.shields.io/bithound/code/github/eloreprojects/programjs.svg)](https://www.bithound.io/github/eloreprojects/programjs/master)
+[![](https://img.shields.io/badge/unicorn-approved-ff69b4.svg)](https://www.youtube.com/watch?v=9auOCbH5Ns4)
 
 A comprehensive and lightweight npm package of common data structures and algorithms to accelerate development.
 
@@ -16,7 +18,7 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Insertion Sort
 - [x] Selection Sort
 - [ ] Quick Sort
-- [ ] Merge Sort
+- [x] Merge Sort
 - [ ] Factorial
 - [ ] Fibonacci
 - [ ] Combination

@@ -8,6 +8,7 @@ const binarySearchTreeTest = require('./binarySearchTreeTest');
 const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
+const mergeSortTest = require('./mergeSortTest');
 
 // Test SinglyLinkedList
 describe('#singlyLinkedListAddAndGetTest', () => {
@@ -111,3 +112,9 @@ describe('#binarySearchTree - Inorder Traversal', () => {
   });
 });
 
+// Test Merge Sort
+describe('#mergeSortTest', () => {
+  it('should pass mergeSortTest', () => {
+    expect(mergeSortTest()).to.equal(true);
+  });
+});

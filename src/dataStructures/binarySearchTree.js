@@ -1,4 +1,5 @@
 const TreeNode = require('./treeNode.js');
+
 // Private method
 const addNodeHelper = (value, head) => {
   if (head === null) {
@@ -15,13 +16,12 @@ const addNodeHelper = (value, head) => {
 module.exports = class BinarySearchTree {
   constructor(args) {
     this.head = null;
-    if (args === undefined) {
-      return;
-    }
-    if (Array.isArray(args)) {
-      this.addNodesFromArray(args);
-    } else {
-      this.addNode(args);
+    if (args !== undefined) {
+      if (Array.isArray(args)) {
+        this.addNodesFromArray(args);
+      } else {
+        this.addNode(args);
+      }
     }
   }
 

@@ -15,12 +15,12 @@ module.exports = class DoublyLinkedList {
     if (node === null) {
       return '[]';
     }
-    let output = '[';
+    let output = '';
     while (node.next !== null) {
       output += `${node.value}, `;
       node = node.next;
     }
-    return `${output + node.value}]`;
+    return `${output} ${node.value}`;
   }
 
   getNodeFromFirst(index) {

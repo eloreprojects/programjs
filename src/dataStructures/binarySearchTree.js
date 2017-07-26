@@ -39,15 +39,15 @@ module.exports = class BinarySearchTree {
     }
   }
 
-  printInorder() {
-    TreeNode.inorderTraversal(this.head);
+  inorderTraversal() {
+    return TreeNode.inorderTraversal(this.head);
   }
 
-  printPreorder() {
-    TreeNode.preorderTraversal(this.head);
+  preorderTraversal() {
+    return TreeNode.preorderTraversal(this.head);
   }
 
-  printPostorder() {
-    TreeNode.postorderTraversal(this.head);
+  postorderTraversal() {
+    return TreeNode.postorderTraversal(this.head);
   }
 };

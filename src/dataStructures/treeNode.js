@@ -8,6 +8,33 @@ const findHeightHelper = (head, height) => {
     this.findHeightHelper(head.right, height)) + 1;
 };
 
+const preorderTraversalHelper = (head, arr) => {
+  if (head === null) {
+    return;
+  }
+  arr.push(head.value);
+  preorderTraversalHelper(head.left, arr);
+  preorderTraversalHelper(head.right, arr);
+};
+
+const inorderTraversalHelper  = (head, arr) => {
+  if (head === null) {
+    return;
+  }
+  inorderTraversalHelper(head.left, arr);
+  arr.push(head.value);
+  inorderTraversalHelper(head.right, arr);
+};
+
+const postorderTraversalHelper = (head, arr) => {
+  if (head === null) {
+    return;
+  }
+  postorderTraversalHelper(head.left, arr);
+  postorderTraversalHelper(head.right, arr);
+  arr.push(head.value);
+};
+
 module.exports = class TreeNode {
   constructor(value) {
     this.value = value;
@@ -40,30 +67,22 @@ module.exports = class TreeNode {
   }
 
   static preorderTraversal(head) {
-    if (head === null) {
-      return;
-    }
-    console.log(head.value);
-    this.preorderTraversal(head.left);
-    this.preorderTraversal(head.right);
+    const arr = [];
+    preorderTraversalHelper(head, arr);
+    return arr;
   }
 
   static inorderTraversal(head) {
-    if (head === null) {
-      return;
-    }
-    this.inorderTraversal(head.left);
-    console.log(head.value);
-    this.inorderTraversal(head.right);
+    const arr = [];
+    inorderTraversalHelper(head, arr);
+    return arr;
   }
 
   static postorderTraversal(head) {
-    if (head === null) {
-      return;
-    }
-    this.postorderTraversal(head.left);
-    this.postorderTraversal(head.right);
-    console.log(head.value);
+    const arr = [];
+    postorderTraversalHelper(head, arr);
+    // console.log(arr);
+    return arr;
   }
 
   static findHeight(head) {

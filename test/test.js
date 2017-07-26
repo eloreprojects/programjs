@@ -85,6 +85,13 @@ describe('#queueIsEmptyAndClearTest', () => {
   });
 });
 
+// Test Binary Search Tree
+describe('#binarySearchTree - Inorder Traversal', () => {
+  it('Should give a sorted list', () => {
+    expect(binarySearchTreeTest()).to.equal(true);
+  });
+});
+
 // Test Bubble Sort
 describe('#bubbleSortTest', () => {
   it('should pass bubbleSortTest', () => {
@@ -103,12 +110,6 @@ describe('#insertionSortTest', () => {
 describe('#selectionSortTest', () => {
   it('should pass selectionSortTest', () => {
     expect(selectionSortTest()).to.equal(true);
-  });
-});
-
-describe('#binarySearchTree - Inorder Traversal', () => {
-  it('Should give a sorted list', () => {
-    expect(binarySearchTreeTest()).to.equal(true);
   });
 });
 

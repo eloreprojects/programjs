@@ -23,6 +23,12 @@ describe('#singlyLinkedListSetTest', () => {
   });
 });
 
+describe('#singlyLinkedListRemoveTest', () => {
+  it('should pass testRemove in singlyLinkedListTest', () => {
+    expect(singlyLinkedListTest.testRemove()).to.equal(true);
+  });
+});
+
 // Test Stack
 describe('#stackPushTest', () => {
   it('should pass testPush in stackTest', () => {

@@ -1,6 +1,5 @@
 # program.js
 [![NPM](https://nodei.co/npm/programjs.png?mini=true)](https://nodei.co/npm/programjs/)
-
 [![Travis](https://travis-ci.org/eloreprojects/programjs.svg?branch=master)](https://travis-ci.org/eloreprojects/programjs) 
 [![bithound](https://img.shields.io/bithound/code/github/eloreprojects/programjs.svg)](https://www.bithound.io/github/eloreprojects/programjs/master)
 [![](https://img.shields.io/badge/unicorn-approved-ff69b4.svg)](https://www.youtube.com/watch?v=9auOCbH5Ns4)
@@ -33,7 +32,8 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Stack
 - [x] Queue
 - [ ] Heap
-- [ ] Tree
+- [x] TreeNode
+- [x] Binary Search Tree
 
 ## Usage
 1. Install the package using `npm install --save programjs` or `yarn add programjs`

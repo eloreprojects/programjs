@@ -3,6 +3,7 @@ const expect = require('chai').expect;
 const singlyLinkedListTest = require('./singlyLinkedListTest');
 const stackTest = require('./stackTest');
 const queueTest = require('./queueTest');
+const binarySearchTreeTest = require('./binarySearchTreeTest');
 
 const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
@@ -81,6 +82,13 @@ describe('#queueSizeTest', () => {
 describe('#queueIsEmptyAndClearTest', () => {
   it('should pass testIsEmptyAndClear in queueTest', () => {
     expect(queueTest.testIsEmptyAndClear()).to.equal(true);
+  });
+});
+
+// Test Binary Search Tree
+describe('#binarySearchTree - Inorder Traversal', () => {
+  it('Should give a sorted list', () => {
+    expect(binarySearchTreeTest()).to.equal(true);
   });
 });
 

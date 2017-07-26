@@ -17,7 +17,7 @@ const preorderTraversalHelper = (head, arr) => {
   preorderTraversalHelper(head.right, arr);
 };
 
-const inorderTraversalHelper  = (head, arr) => {
+const inorderTraversalHelper = (head, arr) => {
   if (head === null) {
     return;
   }

@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 
 const singlyLinkedListTest = require('./singlyLinkedListTest');
+const doublyLinkedListTest = require('./doublyLinkedListTest');
 const stackTest = require('./stackTest');
 const queueTest = require('./queueTest');
 const binarySearchTreeTest = require('./binarySearchTreeTest');
@@ -26,6 +27,31 @@ describe('#singlyLinkedListSetTest', () => {
 describe('#singlyLinkedListRemoveTest', () => {
   it('should pass testRemove in singlyLinkedListTest', () => {
     expect(singlyLinkedListTest.testRemove()).to.equal(true);
+  });
+});
+
+// Test DoublyLinkedList
+describe('#doublyLinkedListAddAndGetTest', () => {
+  it('should pass testAddAndGet in doublyLinkedListTest', () => {
+    expect(doublyLinkedListTest.testAddAndGet()).to.equal(true);
+  });
+});
+
+describe('#doublyLinkedListSpecificAddAndGetTest', () => {
+  it('should pass testSpecificAddAndGet in doublyLinkedListTest', () => {
+    expect(doublyLinkedListTest.testSpecificAddAndGet()).to.equal(true);
+  });
+});
+
+describe('#doublyLinkedListTestSetTest', () => {
+  it('should pass testSet in doublyLinkedListTest', () => {
+    expect(doublyLinkedListTest.testSet()).to.equal(true);
+  });
+});
+
+describe('#doublyLinkedListTestRemoveTest', () => {
+  it('should pass testRemove in doublyLinkedListTest', () => {
+    expect(doublyLinkedListTest.testRemove()).to.equal(true);
   });
 });
 

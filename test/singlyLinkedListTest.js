@@ -75,7 +75,7 @@ class singlyLinkedListTest {
     // Randomly remove 2 elements
     for (let i = 0; i < 2; i += 1) {
       let randomRemoveIndex = -1;
-      while ((randomRemoveIndex < 0) || (randomRemoveIndex > singlyLinkedList.length())) {
+      while ((randomRemoveIndex < 0) || (randomRemoveIndex > singlyLinkedList.length() - 1)) {
         randomRemoveIndex = Math.floor((Math.random() * 10) + 1);
       }
 

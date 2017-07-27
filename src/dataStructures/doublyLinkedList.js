@@ -10,19 +10,6 @@ module.exports = class DoublyLinkedList {
     this.size = 0;
   }
 
-  toString() {
-    let node = this.head;
-    if (node === null) {
-      return '[]';
-    }
-    let output = '';
-    while (node.next !== null) {
-      output += `${node.value}, `;
-      node = node.next;
-    }
-    return `${output} ${node.value}`;
-  }
-
   getNodeFromFirst(index) {
     let current = this.head;
     for (let i = 0; i < index; i += 1) {

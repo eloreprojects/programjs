@@ -1,6 +1,7 @@
 const expect = require('chai').expect;
 
 const singlyLinkedListTest = require('./singlyLinkedListTest');
+const doublyLinkedListTest = require('./doublyLinkedListTest');
 const stackTest = require('./stackTest');
 const queueTest = require('./queueTest');
 const binarySearchTreeTest = require('./binarySearchTreeTest');
@@ -10,112 +11,134 @@ const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
 const mergeSortTest = require('./mergeSortTest');
 
-// Test SinglyLinkedList
-describe('#singlyLinkedListAddAndGetTest', () => {
-  it('should pass testAddAndGet in singlyLinkedListTest', () => {
+describe('SinglyLinkedList add() and get() test', () => {
+  it('SinglyLinkedList failed test for add() and get()', () => {
     expect(singlyLinkedListTest.testAddAndGet()).to.equal(true);
   });
 });
 
-describe('#singlyLinkedListSetTest', () => {
-  it('should pass testSet in singlyLinkedListTest', () => {
+describe('SinglyLinkedList set() test', () => {
+  it('SinglyLinkedList failed test for set()', () => {
     expect(singlyLinkedListTest.testSet()).to.equal(true);
   });
 });
 
-// Test Stack
-describe('#stackPushTest', () => {
-  it('should pass testPush in stackTest', () => {
+describe('SinglyLinkedList remove() test', () => {
+  it('SinglyLinkedList failed test for remove()', () => {
+    expect(singlyLinkedListTest.testRemove()).to.equal(true);
+  });
+});
+
+describe('DoublyLinkedList add() and get() test', () => {
+  it('DoublyLinkedList failed test for add() and get()', () => {
+    expect(doublyLinkedListTest.testAddAndGet()).to.equal(true);
+  });
+});
+
+describe('DoublyLinkedList add() at specific index and get() test', () => {
+  it('DoublyLinkedList failed test for add() at specific index and get()', () => {
+    expect(doublyLinkedListTest.testSpecificAddAndGet()).to.equal(true);
+  });
+});
+
+describe('DoublyLinkedList set() test', () => {
+  it('DoublyLinkedList failed test for set()', () => {
+    expect(doublyLinkedListTest.testSet()).to.equal(true);
+  });
+});
+
+describe('DoublyLinkedList remove() test', () => {
+  it('DoublyLinkedList failed test for remove()', () => {
+    expect(doublyLinkedListTest.testRemove()).to.equal(true);
+  });
+});
+
+describe('Stack push() test', () => {
+  it('Stack failed test for push()', () => {
     expect(stackTest.testPush()).to.equal(true);
   });
 });
 
-describe('#stackPeekTest', () => {
-  it('should pass testPeek in stackTest', () => {
+describe('Stack peek() test', () => {
+  it('Stack failed test for peek()', () => {
     expect(stackTest.testPeek()).to.equal(true);
   });
 });
 
-describe('#stackPopTest', () => {
-  it('should pass testPop in stackTest', () => {
+describe('Stack pop() test', () => {
+  it('Stack failed test for pop()', () => {
     expect(stackTest.testPop()).to.equal(true);
   });
 });
 
-describe('#stackSizeTest', () => {
-  it('should pass testSize in stackTest', () => {
+describe('Stack size() test', () => {
+  it('Stack failed test for size()', () => {
     expect(stackTest.testSize()).to.equal(true);
   });
 });
 
-describe('#stackIsEmptyAndClearTest', () => {
-  it('should pass testIsEmptyAndClear in stackTest', () => {
+describe('Stack clear() and isEmpty() test', () => {
+  it('Stack failed test for clear() and isEmpty()', () => {
     expect(stackTest.testIsEmptyAndClear()).to.equal(true);
   });
 });
 
-// Test Queue
-describe('#queueEnqueueTest', () => {
-  it('should pass testEnqueue in queueTest', () => {
+describe('Queue enqueue() test', () => {
+  it('Queue failed test for enqueue()', () => {
     expect(queueTest.testEnqueue()).to.equal(true);
   });
 });
 
-describe('#queueDequeueTest', () => {
-  it('should pass testEnqueue in queueTest', () => {
+describe('Queue dequeue() test', () => {
+  it('Queue failed test for dequeue()', () => {
     expect(queueTest.testDequeue()).to.equal(true);
   });
 });
 
-describe('#queuePeekTest', () => {
-  it('should pass testPeek in queueTest', () => {
+describe('Queue peek() test', () => {
+  it('Queue failed test for peek()', () => {
     expect(queueTest.testPeek()).to.equal(true);
   });
 });
 
-describe('#queueSizeTest', () => {
-  it('should pass testSize in queueTest', () => {
+describe('Queue size() test', () => {
+  it('Queue failed test for size()', () => {
     expect(queueTest.testSize()).to.equal(true);
   });
 });
 
-describe('#queueIsEmptyAndClearTest', () => {
-  it('should pass testIsEmptyAndClear in queueTest', () => {
+describe('Queue clear() and isEmpty() test', () => {
+  it('Queue failed test for clear() and isEmpty()', () => {
     expect(queueTest.testIsEmptyAndClear()).to.equal(true);
   });
 });
 
-// Test Binary Search Tree
-describe('#binarySearchTree - Inorder Traversal', () => {
-  it('Should give a sorted list', () => {
+describe('BinarySearchTree - Inorder Traversal test', () => {
+  it('BinarySearch tree failed to give sorted list', () => {
     expect(binarySearchTreeTest()).to.equal(true);
   });
 });
 
-// Test Bubble Sort
-describe('#bubbleSortTest', () => {
-  it('should pass bubbleSortTest', () => {
+describe('Bubble sort test', () => {
+  it('Bubble sort failed to give sorted list', () => {
     expect(bubbleSortTest()).to.equal(true);
   });
 });
 
-// Test Insertion Sort
-describe('#insertionSortTest', () => {
-  it('should pass insertionSortTest', () => {
+describe('Insertion sort test', () => {
+  it('Insertion sort failed to give sorted list', () => {
     expect(insertionSortTest()).to.equal(true);
   });
 });
 
-// Test Selection Sort
-describe('#selectionSortTest', () => {
-  it('should pass selectionSortTest', () => {
+describe('Selection sort test', () => {
+  it('Selection sort failed to give sorted list', () => {
     expect(selectionSortTest()).to.equal(true);
   });
 });
 
-// Test Merge Sort
-describe('#mergeSortTest', () => {
-  it('should pass mergeSortTest', () => {
+describe('Merge sort test', () => {
+  it('Merge sort failed to give sorted list', () => {
     expect(mergeSortTest()).to.equal(true);
   });
 });

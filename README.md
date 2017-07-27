@@ -29,6 +29,7 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Node
 - [x] DoubleNode
 - [x] SinglyLinkedList
+- [x] DoublyLinkedList
 - [x] Stack
 - [x] Queue
 - [ ] Heap

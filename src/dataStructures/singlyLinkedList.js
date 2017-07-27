@@ -28,7 +28,7 @@ module.exports = class SinglyLinkedList {
     return node.value;
   }
 
-  size() {
+  length() {
     return this.size;
   }
 

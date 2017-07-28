@@ -12,7 +12,7 @@ const selectionSortTest = require('./selectionSortTest');
 const mergeSortTest = require('./mergeSortTest');
 const factorialTest = require('./factorialTest');
 
-// Example for running data structure test
+// Example for running data structure test - note the 'only' attribute on `describe`
 describe.only('SinglyLinkedList test', () => {
   it('SinglyLinkedList test for add() and get()', () => {
     expect(singlyLinkedListTest.testAddAndGet()).to.equal(true);
@@ -83,7 +83,7 @@ describe('BinarySearchTree - Inorder Traversal test', () => {
   });
 });
 
-// Example for running algorithm test
+// Example for running algorithm test - note the 'only' attribute on `it`
 describe('Bubble sort test', () => {
   it.only('Bubble sort failed to give sorted list', () => {
     expect(bubbleSortTest()).to.equal(true);

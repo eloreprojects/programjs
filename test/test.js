@@ -10,6 +10,7 @@ const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
 const mergeSortTest = require('./mergeSortTest');
+const factorialTest = require('./factorialTest');
 
 describe('SinglyLinkedList add() and get() test', () => {
   it('SinglyLinkedList failed test for add() and get()', () => {
@@ -140,5 +141,11 @@ describe('Selection sort test', () => {
 describe('Merge sort test', () => {
   it('Merge sort failed to give sorted list', () => {
     expect(mergeSortTest()).to.equal(true);
+  });
+});
+
+describe('Factorial test', () => {
+  it('Factorial test failed', () => {
+    expect(factorialTest()).to.equal(true);
   });
 });

@@ -20,11 +20,10 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Selection Sort
 - [ ] Quick Sort
 - [x] Merge Sort
-- [ ] Factorial
+- [x] Factorial
 - [ ] Fibonacci
 - [ ] Combination
 - [ ] Permutation
-- [ ] Factorial
 
 #### Data Structures
 - [x] Node

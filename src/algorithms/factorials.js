@@ -1,4 +1,7 @@
 const calculateFactorial = (args) => {
+  if (args < 0) {
+    return undefined;
+  }
   if (args === 0) {
     return 1;
   }

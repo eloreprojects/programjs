@@ -30,3 +30,5 @@ Don't know where to start finding algorithms to implement? This project accepts 
 ## Testing 
 Each addition must have a unit tests in the `test` directory for the respective changes. Try to modularize as much as possible,
 breaking down each functionality into a different test.
+
+Add your test into `test/test.js`, and like in the examples, add your test with the `.only` descriptor to `describe` if data structure, or `it` if a single part of a test.

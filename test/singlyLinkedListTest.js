@@ -53,6 +53,55 @@ class singlyLinkedListTest {
 
     return true;
   }
+
+  static testRemove() {
+    const array = [];
+    const singlyLinkedList = new SinglyLinkedList();
+    const randomSize = Math.floor((Math.random() * 10) + 3);
+    let randomElement;
+    // Add a random number of elements
+    for (let i = 0; i < randomSize; i += 1) {
+      randomElement = Math.floor((Math.random() * 10) + 1);
+      array.push(randomElement);
+      singlyLinkedList.add(randomElement);
+    }
+
+    let initialList = 'Initial list: ';
+    for (let i = 0; i < randomSize; i += 1) {
+      initialList += `${array[i].toString()} `;
+    }
+    console.log(initialList);
+
+    // Randomly remove 2 elements
+    for (let i = 0; i < 2; i += 1) {
+      let randomRemoveIndex = -1;
+      while ((randomRemoveIndex < 0) || (randomRemoveIndex > singlyLinkedList.length() - 1)) {
+        randomRemoveIndex = Math.floor((Math.random() * 10) + 1);
+      }
+
+      console.log(`Remove index: ${randomRemoveIndex}`);
+      array.splice(randomRemoveIndex, 1);
+      singlyLinkedList.remove(randomRemoveIndex);
+    }
+
+    let arrayString = 'Array after remove: ';
+    let sllString = 'SinglyLinkedList after remove: ';
+    for (let i = 0; i < randomSize - 2; i += 1) {
+      arrayString += `${array[i]} `;
+      sllString += `${singlyLinkedList.get(i)} `;
+    }
+    console.log(arrayString);
+    console.log(sllString);
+
+    // Check correct length and correct values
+    if ((array.length === (randomSize - 2)) || (singlyLinkedList.length() === (randomSize - 2))) {
+      for (let i = 0; i < randomSize - 2; i += 1) {
+        if (array[i] !== singlyLinkedList.get(i)) return false;
+      }
+      return true;
+    }
+    return false;
+  }
 }
 
 module.exports = singlyLinkedListTest;

@@ -9,6 +9,7 @@ const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
 const mergeSortTest = require('./mergeSortTest');
+const factorialTest = require('./factorialTest');
 
 // Test SinglyLinkedList
 describe('#singlyLinkedListAddAndGetTest', () => {
@@ -117,5 +118,11 @@ describe('#selectionSortTest', () => {
 describe('#mergeSortTest', () => {
   it('should pass mergeSortTest', () => {
     expect(mergeSortTest()).to.equal(true);
+  });
+});
+
+describe('#factorialTest', () => {
+  it('should pass factorial test', () => {
+    expect(factorialTest()).to.equal(true);
   });
 });

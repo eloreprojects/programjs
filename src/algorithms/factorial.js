@@ -1,25 +1,25 @@
-const calculateFactorial = (args) => {
-  if (args < 0) {
+const calculateFactorial = (n) => {
+  if (n < 0) {
     return undefined;
   }
   let result = 1;
-  if (args === 0 || args === 1) {
+  if (n === 0 || n === 1) {
     return result;
   }
-  for (let i = 1; i <= args; i += 1) {
+  for (let i = 1; i <= n; i += 1) {
     result *= i;
   }
   return result;
 };
 
-module.exports = (args) => {
-  if (Array.isArray(args) && args.length !== 0) {
-    args = args.map(calculateFactorial);
-  } else if (Number.isInteger(args)) {
-    args = calculateFactorial(args);
+module.exports = (n) => {
+  if (Array.isArray(n) && n.length !== 0) {
+    n = n.map(calculateFactorial);
+  } else if (Number.isInteger(n)) {
+    n = calculateFactorial(n);
   } else {
-    args = 'Argument not a number.';
+    n = 'Argument not a number.';
   }
-  return args;
+  return n;
 };
 

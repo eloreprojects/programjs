@@ -144,8 +144,8 @@ describe('Merge sort test', () => {
   });
 });
 
-describe('#factorialTest', () => {
-  it('should pass factorial test', () => {
+describe('Factorial test', () => {
+  it('Factorial test failed', () => {
     expect(factorialTest()).to.equal(true);
   });
 });

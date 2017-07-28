@@ -1,11 +1,8 @@
 const calculateFactorial = (args) => {
-  if (args === 0) {
-    return 1;
-  }
-  if (args === 1) {
-    return 1;
-  }
   let result = 1;
+  if (args === 0 || args === 1) {
+    return result;
+  }
   for (let i = 1; i <= args; i += 1) {
     result *= i;
   }
@@ -18,7 +15,7 @@ module.exports = (args) => {
   } else if (Number.isInteger(args)) {
     args = calculateFactorial(args);
   } else {
-    args = 'You stupid piece of shit...';
+    args = 'Argument not a number.';
   }
   return args;
 };

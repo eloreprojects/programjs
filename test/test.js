@@ -66,44 +66,44 @@ describe('Queue test', () => {
   it('Queue test for dequeue()', () => {
     expect(queueTest.testDequeue()).to.equal(true);
   });
-  it('Queue failed test for peek()', () => {
+  it('Queue test for peek()', () => {
     expect(queueTest.testPeek()).to.equal(true);
   });
-  it('Queue failed test for size()', () => {
+  it('Queue test for size()', () => {
     expect(queueTest.testSize()).to.equal(true);
   });
-  it('Queue failed test for clear() and isEmpty()', () => {
+  it('Queue test for clear() and isEmpty()', () => {
     expect(queueTest.testIsEmptyAndClear()).to.equal(true);
   });
 });
 
 describe('BinarySearchTree - Inorder Traversal test', () => {
-  it('BinarySearch tree failed to give sorted list', () => {
+  it('BinarySearch tree test to give sorted list', () => {
     expect(binarySearchTreeTest()).to.equal(true);
   });
 });
 
 // Example for running algorithm test - note the 'only' attribute on `it`
 describe('Bubble sort test', () => {
-  it.only('Bubble sort failed to give sorted list', () => {
+  it.only('Bubble sort test to give sorted list', () => {
     expect(bubbleSortTest()).to.equal(true);
   });
 });
 
 describe('Insertion sort test', () => {
-  it('Insertion sort failed to give sorted list', () => {
+  it('Insertion sort test to give sorted list', () => {
     expect(insertionSortTest()).to.equal(true);
   });
 });
 
 describe('Selection sort test', () => {
-  it('Selection sort failed to give sorted list', () => {
+  it('Selection sort test to give sorted list', () => {
     expect(selectionSortTest()).to.equal(true);
   });
 });
 
 describe('Merge sort test', () => {
-  it('Merge sort failed to give sorted list', () => {
+  it('Merge sort test to give sorted list', () => {
     expect(mergeSortTest()).to.equal(true);
   });
 });

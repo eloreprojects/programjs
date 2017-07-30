@@ -35,6 +35,7 @@ Why is this module named program.js? An inspiration for this project was compute
 - [ ] Heap
 - [x] TreeNode
 - [x] Binary Search Tree
+- [x] HashTable
 
 ## Usage
 1. Install the package using `npm install --save programjs` or `yarn add programjs`

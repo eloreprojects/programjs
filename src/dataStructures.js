@@ -6,6 +6,7 @@ const stack = require('./dataStructures/stack');
 const queue = require('./dataStructures/queue');
 const treeNode = require('./dataStructures/treeNode');
 const binarySearchTree = require('./dataStructures/binarySearchTree');
+const hashTable = require('./dataStructures/hashTable');
 
 module.exports = {
   node,
@@ -16,4 +17,5 @@ module.exports = {
   queue,
   treeNode,
   binarySearchTree,
+  hashTable,
 };

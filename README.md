@@ -22,8 +22,8 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Merge Sort
 - [x] Factorial
 - [ ] Fibonacci
-- [ ] Combination
-- [ ] Permutation
+- [x] Combinations
+- [ ] Permutations
 
 #### Data Structures
 - [x] Node

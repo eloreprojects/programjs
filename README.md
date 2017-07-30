@@ -23,7 +23,7 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Factorial
 - [ ] Fibonacci
 - [x] Combinations
-- [ ] Permutations
+- [x] Permutations
 
 #### Data Structures
 - [x] Node

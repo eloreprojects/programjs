@@ -16,8 +16,5 @@ module.exports = () => {
   console.log(`Answer array: ${answers.join(' ')}`);
   console.log(`Attempted array: ${attempt.join(' ')}`);
 
-  if (flag) {
-    return false;
-  }
-  return true;
+  return !flag;
 };

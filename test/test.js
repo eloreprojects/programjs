@@ -10,7 +10,10 @@ const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
 const mergeSortTest = require('./mergeSortTest');
+
 const factorialTest = require('./factorialTest');
+const combinationsTest = require('./combinationsTest');
+const permutationsTest = require('./permutationsTest');
 
 // Example for running data structure test - note the 'only' attribute on `describe`
 describe.only('SinglyLinkedList test', () => {
@@ -111,5 +114,17 @@ describe('Merge sort test', () => {
 describe('Factorial test', () => {
   it('Factorial test failed', () => {
     expect(factorialTest()).to.equal(true);
+  });
+});
+
+describe('Combinations test', () => {
+  it.only('Combinations to provide correct answers', () => {
+    expect(combinationsTest()).to.equal(true);
+  });
+});
+
+describe('Permutations test', () => {
+  it.only('Permutations to provide correct answers', () => {
+    expect(permutationsTest()).to.equal(true);
   });
 });

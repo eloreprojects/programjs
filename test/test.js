@@ -4,6 +4,7 @@ const singlyLinkedListTest = require('./singlyLinkedListTest');
 const doublyLinkedListTest = require('./doublyLinkedListTest');
 const stackTest = require('./stackTest');
 const queueTest = require('./queueTest');
+const hashTableTest = require('./hashTableTest');
 const binarySearchTreeTest = require('./binarySearchTreeTest');
 
 const bubbleSortTest = require('./bubbleSortTest');
@@ -15,8 +16,7 @@ const factorialTest = require('./factorialTest');
 const combinationsTest = require('./combinationsTest');
 const permutationsTest = require('./permutationsTest');
 
-// Example for running data structure test - note the 'only' attribute on `describe`
-describe.only('SinglyLinkedList test', () => {
+describe('SinglyLinkedList test', () => {
   it('SinglyLinkedList test for add() and get()', () => {
     expect(singlyLinkedListTest.testAddAndGet()).to.equal(true);
   });
@@ -80,6 +80,13 @@ describe('Queue test', () => {
   });
 });
 
+// Example for running data structure test - note the 'only' attribute on `describe`
+describe.only('HashTable Test', () => {
+  it('HashTable test for add() and search() and length()', () => {
+    expect(hashTableTest.testAddandSearchandLength()).to.equal(true);
+  });
+});
+
 describe('BinarySearchTree - Inorder Traversal test', () => {
   it('BinarySearch tree test to give sorted list', () => {
     expect(binarySearchTreeTest()).to.equal(true);
@@ -118,13 +125,13 @@ describe('Factorial test', () => {
 });
 
 describe('Combinations test', () => {
-  it.only('Combinations to provide correct answers', () => {
+  it('Combinations to provide correct answers', () => {
     expect(combinationsTest()).to.equal(true);
   });
 });
 
 describe('Permutations test', () => {
-  it.only('Permutations to provide correct answers', () => {
+  it('Permutations to provide correct answers', () => {
     expect(permutationsTest()).to.equal(true);
   });
 });

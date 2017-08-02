@@ -85,6 +85,9 @@ describe.only('HashTable Test', () => {
   it('HashTable test for add() and search() and length()', () => {
     expect(hashTableTest.testAddandSearchandLength()).to.equal(true);
   });
+  it('HashTable test for remove()', () => {
+    expect(hashTableTest.testRemove()).to.equal(true);
+  });
 });
 
 describe('BinarySearchTree - Inorder Traversal test', () => {

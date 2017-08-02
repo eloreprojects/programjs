@@ -9,7 +9,6 @@ class hashTableTest {
     hashTable.add('third', 3);
     hashTable.add('fourth', 4);
     hashTable.add('fifth', 5);
-
     console.log(`HashTable contents: ${hashTable.toString()}`);
     console.log(`HashTable length: ${hashTable.length()}`);
 

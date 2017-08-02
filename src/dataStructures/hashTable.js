@@ -23,7 +23,6 @@ module.exports = class HashTable {
 
   add(key, value) {
     const hash = HashTable.calculateHash(key, this.size);
-    console.log(hash);
     if (!Object.prototype.hasOwnProperty.call(this.values, hash)) {
       this.values[hash] = {};
     }
@@ -31,11 +30,10 @@ module.exports = class HashTable {
       this.numberOfValues += 1;
     }
     this.values[hash][key] = value;
-    console.log(this.values[hash][key]);
   }
 
   remove(key) {
-    const hash = HashTable.calculateHash(key);
+    const hash = HashTable.calculateHash(key, this.size);
     if ((Object.prototype.hasOwnProperty.call(this.values, hash))
       && (Object.prototype.hasOwnProperty.call(this.values[hash], key))) {
       delete this.values[hash][key];
@@ -44,7 +42,7 @@ module.exports = class HashTable {
   }
 
   search(key) {
-    const hash = HashTable.calculateHash(key);
+    const hash = HashTable.calculateHash(key, this.size);
     if ((Object.prototype.hasOwnProperty.call(this.values, hash))
       && (Object.prototype.hasOwnProperty.call(this.values[hash], key))) {
       return this.values[hash][key];
@@ -58,11 +56,15 @@ module.exports = class HashTable {
 
   toString() {
     let string = '';
-    for (let value = 0; value < this.values.length; value += 1) {
-      for (let key = 0; key < this.values[value].length; key += 1) {
-        string += `${this.values[value][key]}`;
+    Object.keys(this.values).forEach((value) => {
+      if (Object.prototype.hasOwnProperty.call(this.values, value)) {
+        Object.keys(this.values[value]).forEach((key) => {
+          if (Object.prototype.hasOwnProperty.call(this.values[value], key)) {
+            string += `${this.values[value][key]} `;
+          }
+        });
       }
-    }
+    });
     return string.trim();
   }
 

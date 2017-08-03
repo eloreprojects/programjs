@@ -1,6 +1,6 @@
 {
   "name": "programjs",
-  "version": "0.1.0",
+  "version": "0.1.1-0",
   "description": "A comprehensive and lightweight npm package of common data structures and algorithms to accelerate development.",
   "main": "./index.js",
   "repository": {

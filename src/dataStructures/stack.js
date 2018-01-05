@@ -1,7 +1,5 @@
 /**
  * An implementation of a Stack in Javascript.
- * 
- * Standard stack functions.
  */
 module.exports = class Stack {
   constructor() {

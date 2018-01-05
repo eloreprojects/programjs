@@ -1,7 +1,5 @@
 /**
- * An implementation of a Queue in Javascript. 
- * 
- * Standard queue functions.
+ * An implementation of a Queue in Javascript.
  */
 module.exports = class Queue {
   constructor() {

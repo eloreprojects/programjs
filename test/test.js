@@ -1,4 +1,4 @@
-const expect = require('chai').expect;
+const { expect } = require('chai');
 
 const singlyLinkedListTest = require('./singlyLinkedListTest');
 const doublyLinkedListTest = require('./doublyLinkedListTest');

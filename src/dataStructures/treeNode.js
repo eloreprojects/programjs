@@ -1,11 +1,15 @@
+/* eslint comma-dangle: ["error", "never"] */
+
 // Private method
 const findHeightHelper = (head, height) => {
   if (head == null) {
     return height;
   }
   height += 1;
-  return Math.max(this.findHeightHelper(head.left, height),
-    this.findHeightHelper(head.right, height)) + 1;
+  return Math.max(
+    this.findHeightHelper(head.left, height),
+    this.findHeightHelper(head.right, height)
+  ) + 1;
 };
 
 const preorderTraversalHelper = (head, arr) => {

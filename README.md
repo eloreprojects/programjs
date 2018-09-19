@@ -1,9 +1,8 @@
 # program.js
+
 [![NPM](https://nodei.co/npm/programjs.png?mini=true)](https://nodei.co/npm/programjs/)
 
-[![Travis](https://travis-ci.org/eloreprojects/programjs.svg?branch=master)](https://travis-ci.org/eloreprojects/programjs) 
-[![bithound](https://img.shields.io/bithound/code/github/eloreprojects/programjs.svg)](https://www.bithound.io/github/eloreprojects/programjs/master)
-[![](https://img.shields.io/badge/gary-approved-11999E.svg)](http://elore.io)
+[![Travis](https://travis-ci.org/eloreprojects/programjs.svg?branch=master)](https://travis-ci.org/eloreprojects/programjs) [![](https://img.shields.io/badge/gary-approved-11999E.svg)](http://elore.io)
 
 A comprehensive and lightweight npm package of common data structures and algorithms to accelerate development.
 
@@ -46,4 +45,4 @@ Why is this module named program.js? An inspiration for this project was compute
 If you're interested in contributing to program.js, refer to [our guide](https://github.com/eloreprojects/programjs/blob/master/CONTRIBUTING.md).
 
 ## License
-We believe in open source projects. Our code is licensed under [The GNU General Public License v3.0](https://www.gnu.org/licenses/gpl-3.0.en.html).
+We believe in open source projects. Our code is licensed under the MIT License..

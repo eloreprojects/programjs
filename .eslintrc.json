@@ -1,4 +1,7 @@
 {
+    "parserOptions": {
+      "ecmaVersion": 2018
+    },
     "extends": "airbnb",
     "rules": {
       "no-console":0,

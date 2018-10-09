@@ -13,6 +13,7 @@ const selectionSortTest = require('./selectionSortTest');
 const mergeSortTest = require('./mergeSortTest');
 
 const factorialTest = require('./factorialTest');
+const fibonacciTest = require('./fibonacciTest');
 const combinationsTest = require('./combinationsTest');
 const permutationsTest = require('./permutationsTest');
 
@@ -124,6 +125,12 @@ describe('Merge sort test', () => {
 describe('Factorial test', () => {
   it('Factorial test failed', () => {
     expect(factorialTest()).to.equal(true);
+  });
+});
+
+describe('Fibonacci test', () => {
+  it.only('Fibonacci test failed', () => {
+    expect(fibonacciTest()).to.equal(true);
   });
 });
 

@@ -23,7 +23,7 @@ Why is this module named program.js? An inspiration for this project was compute
 - [ ] Quick Sort
 - [x] Merge Sort
 - [x] Factorial
-- [ ] Fibonacci
+- [x] Fibonacci
 - [x] Combinations
 - [x] Permutations
 

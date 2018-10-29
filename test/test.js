@@ -10,6 +10,7 @@ const binarySearchTreeTest = require('./binarySearchTreeTest');
 const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
+const quickSortTest = require('./quickSortTest');
 const mergeSortTest = require('./mergeSortTest');
 
 const factorialTest = require('./factorialTest');
@@ -119,6 +120,12 @@ describe('Selection sort test', () => {
 describe('Merge sort test', () => {
   it('Merge sort test to give sorted list', () => {
     expect(mergeSortTest()).to.equal(true);
+  });
+});
+
+describe('Quick sort test', () => {
+  it.only('Quick sort test to give sorted list', () => {
+    expect(quickSortTest()).to.equal(true);
   });
 });
 

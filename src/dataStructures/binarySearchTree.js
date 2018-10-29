@@ -5,7 +5,7 @@ const addNodeHelper = (value, head) => {
   if (head === null) {
     const newNode = new TreeNode(value);
     return newNode;
-  } else if (value <= head.value) {
+  } if (value <= head.value) {
     head.left = addNodeHelper(value, head.left);
   } else {
     head.right = addNodeHelper(value, head.right);

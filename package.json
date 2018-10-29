@@ -8,7 +8,7 @@
     "url": "git+https://github.com/eloreprojects/programjs.git"
   },
   "scripts": {
-    "lint": "eslint src/** && eslint test/**",
+    "lint": "eslint src/** --fix && eslint test/** --fix",
     "test": "npm run lint && mocha --reporter spec"
   },
   "author": "Arun Kirubarajan & Neeraj Aggarwal",

@@ -29,10 +29,37 @@ Overall, comment usage should be minimized in hopes of keeping files lightweight
 
 ## Testing
 
-Each addition must have a unit tests in the `test` directory for the respective changes. Try to modularize as much as possible,
-breaking down each functionality into a different test.
+Each addition must have a unit tests in the `test` directory for the respective changes. Try to modularize as much as possible, breaking down each functionality into a different test.
 
-Add your test into `test/test.js` following existing format. Add your test with the `.only` descriptor to `describe` if testing an entire data structure, or `it` if a single part of a test. We do this to minimize the number of tests when testing, and create a more lightweight experience.
+Add your test into `test/test.js` following existing format. Add your test with the `.only` descriptor to `describe` if testing an entire data structure, or `it` if a single part of a test. This way, during development, testing is much faster as it only runs the designated tests. For example,
+
+```js
+describe.only('HashTable Test', () => {
+  it('HashTable test for add() and search() and length()', () => {
+    expect(hashTableTest.testAddandSearchandLength()).to.equal(true);
+  });
+  it('HashTable test for remove()', () => {
+    expect(hashTableTest.testRemove()).to.equal(true);
+  });
+});
+```
+
+for the entire HashTable test or
+
+```js
+describe('HashTable Test', () => {
+  it('HashTable test for add() and search() and length()', () => {
+    expect(hashTableTest.testAddandSearchandLength()).to.equal(true);
+  });
+  it.only('HashTable test for remove()', () => {
+    expect(hashTableTest.testRemove()).to.equal(true);
+  });
+});
+```
+
+for only the remove test.
+
+However, make sure that you delete the `.only` descriptor to make sure that the entire module is tested. Before making a pull request, make sure that `yarn test` passes.
 
 ## Github
 

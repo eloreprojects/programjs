@@ -10,6 +10,7 @@ const binarySearchTreeTest = require('./binarySearchTreeTest');
 const bubbleSortTest = require('./bubbleSortTest');
 const insertionSortTest = require('./insertionSortTest');
 const selectionSortTest = require('./selectionSortTest');
+const quickSortTest = require('./quickSortTest');
 const mergeSortTest = require('./mergeSortTest');
 
 const factorialTest = require('./factorialTest');
@@ -81,8 +82,7 @@ describe('Queue test', () => {
   });
 });
 
-// Example for running data structure test - note the 'only' attribute on `describe`
-describe.only('HashTable Test', () => {
+describe('HashTable Test', () => {
   it('HashTable test for add() and search() and length()', () => {
     expect(hashTableTest.testAddandSearchandLength()).to.equal(true);
   });
@@ -97,14 +97,13 @@ describe('BinarySearchTree - Inorder Traversal test', () => {
   });
 });
 
-// Example for running algorithm test - note the 'only' attribute on `it`
 describe('Bubble sort test', () => {
-  it.only('Bubble sort test to give sorted list', () => {
+  it('Bubble sort test to give sorted list', () => {
     expect(bubbleSortTest()).to.equal(true);
   });
 });
 
-describe('Insertion sort test', () => {
+describe('Inserti sort test', () => {
   it('Insertion sort test to give sorted list', () => {
     expect(insertionSortTest()).to.equal(true);
   });
@@ -122,6 +121,12 @@ describe('Merge sort test', () => {
   });
 });
 
+describe('Quick sort test', () => {
+  it('Quick sort test to give sorted list', () => {
+    expect(quickSortTest()).to.equal(true);
+  });
+});
+
 describe('Factorial test', () => {
   it('Factorial test failed', () => {
     expect(factorialTest()).to.equal(true);
@@ -129,7 +134,7 @@ describe('Factorial test', () => {
 });
 
 describe('Fibonacci test', () => {
-  it.only('Fibonacci test failed', () => {
+  it('Fibonacci test failed', () => {
     expect(fibonacciTest()).to.equal(true);
   });
 });

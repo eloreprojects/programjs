@@ -20,7 +20,7 @@ Why is this module named program.js? An inspiration for this project was compute
 - [x] Bubble Sort
 - [x] Insertion Sort
 - [x] Selection Sort
-- [ ] Quick Sort
+- [x] Quick Sort
 - [x] Merge Sort
 - [x] Factorial
 - [x] Fibonacci
